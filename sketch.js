@@ -39,12 +39,6 @@ function draw() {
         box.shapeColor="red"
         music.play();
 }
-    if(rect2.isTouching(box)){  
-        box.shapeColor = rgb(255,128,0);
-        box.velocityX = 0;
-        box.velocityY = 0;
-        music.stop();
-}
 
    if(rect2.isTouching(box)  &&  box.bounceOff(rect2)){
         box.shapeColor="yellow"
